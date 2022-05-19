@@ -734,7 +734,7 @@ contact-area .form-title {
   color: #5f5f5f;
 }
 
-yes-no-right {
+.yes-no-right {
   justify-content: space-between;
 }
 
@@ -753,10 +753,6 @@ yes-no-right {
   justify-content: space-between;
 }
 
-.yes-no-area label:first-child {
-  margin-left: 5%;
-  margin-right: 50px;
-}
 .yes-no-area label span {
   margin-left: 8px;
 }
