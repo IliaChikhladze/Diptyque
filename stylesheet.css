@@ -577,6 +577,10 @@ contact-area .form-title {
   width: 100%;
 }
 
+.birthday-picker {
+  display: flex;
+}
+
 .bd-picker-text {
   font-family: GothamHTF-Book;
   font-size: 14px;
