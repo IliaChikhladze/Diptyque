@@ -1,0 +1,231 @@
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Diptyque</title>
+        <link rel="stylesheet" href="css/style.css">
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.2/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="/js/bday-picker.js"></script>
+        <script src="/js/main.js"></script>
+    </head>
+
+    <body>
+        <div class="main-container-wrap">
+            <!-- Header -->
+            <header class="header">
+                <div class="logo-wrap">
+                    <div class="logo"></div>
+                </div>
+
+                <nav class="nav-bar">
+                    <div class="nav-item">
+                        <span class="nav-item-info">
+                            <span class="nav-text">sign in as</span>
+                            <span class="nav-subtext">Jane Michelle Doe</span>
+                        </span>
+                        <span class="chevron-icon"></span>
+                    </div>
+                </nav>
+            </header>
+
+            <!-- Main Form -->
+            <form class="main-container">
+                <section class="left-section">
+                    <div class="identity-area">
+                        <div class="form-title">
+                            <span class="border"></span>
+                            <h2>Identity</h2>
+                            <span class="border"></span>
+                        </div>
+
+                        <div class="row">
+                            <select name="gender" id="gender" class="col2">
+                                <option value="" disabled selected>Gender</option>
+                                <option value="female">female</option>
+                                <option value="male">male</option>
+                            </select>
+                            <label class="checkbox-label col2">
+                                <input type="checkbox" name="corporate" value="value">
+                                <span class="checkmark"></span>
+                                Corporate
+                            </label>
+                        </div>
+
+                        <div class="row">
+                            <div class="requred col2">
+                                <input type="text" id="name" placeholder="name" name="name" required>
+                            </div>
+                            <div class="requred col2">
+                                <input type="text" id="last-name" placeholder="last-name" name="last-name" required>
+                            </div>
+                        </div>
+
+                        <div class="bd-wrap col1">
+                            <div class="row">
+                                <span class="bd-picker-text">Birthday</span>
+                                <div class="picker" id="picker1"></div>
+                            </div>
+                            <div class="row">
+                                <div class="bd-notice">
+                                    <span class="bd-icon"></span>
+                                    <span class="bd-notice-text">Please note: including the year is not required but highly
+                                        recommended.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-area">
+                        <div class="form-title">
+                            <span class="border"></span>
+                            <h2>Contact</h2>
+                            <span class="border"></span>
+                        </div>
+
+                        <span class="row">
+                            <div class="warning">
+                                At least one of these fields is required: <br>
+                                email, phone number or Zip
+                            </div>
+                        </span>
+
+                        <div class="row">
+                            <input type="email" name="email" id="email" placeholder="Email"  >
+                        </div>
+
+                        <div class="row">
+                            <span class="phone-label">phone number</span>
+                            <select name="phone-code" id="phone-code">
+                                <option value="FR">+33 (FR)</option>
+                                <option value="GEO">+12 (DE)</option>
+                            </select>
+                            <input type="number" name="number" id="phone-number" placeholder="Number" required>
+                        </div>
+
+                        <div class="row">
+                            <select name="country" id="country">
+                                <option value="france">France</option>
+                                <option value="france">Georgia</option>
+                            </select>
+                        </div>
+
+                        <div class="row">
+                            <input type="text" name="zip" id="zip" placeholder="Zip" required>
+                            <input type="text" name="city" id="city" placeholder="City">
+                        </div>
+
+                        <div class="row">
+                            <input type="text" name="primary-address" id="primary-address" placeholder="Address 1">
+                            <input type="text" name="secondary-address" id="secondary-address" placeholder="Address 2">
+                        </div>
+
+                        <div class="row">
+                            <label class="notice checkbox-label">
+                                <input type="checkbox" name="notice-checkbox" value="value" checked>
+                                <span class="checkmark"></span>
+                                Home/delivery and billing address are the same.
+                            </label>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="right-section">
+                    <div class="preferences-area">
+                        <div class="form-title">
+                            <span class="border"></span>
+                            <h2>Contact preferences</h2>
+                            <span class="border"></span>
+                        </div>
+
+                        <h2 class="form-title"></h2>
+
+                        <h4>Please share how you prefer to be contacted by Diptyque’s team.</h4>
+
+                        <div class="yes-no-area">
+                            <div class="row">
+                                <div class="col2 yes-no-left">
+                                    <span class="icon-yes-no email-icon"></span>
+                                    <span class="text-yes-no">Email</span>
+                                </div>
+                                <div class="col2 yes-no-right">
+                                    <label class="radio-label" for="email-yes">
+                                        <input type="radio" id="email-yes" name="email_yes_no" class="yes-radio-bg"
+                                            value="Yes" checked>
+                                        <span class="checkmark"></span>
+                                        <span>Yes</span>
+                                    </label>
+                                    <label class="radio-label" for="email-no">
+                                        <input type="radio" id="email-no" name="email_yes_no" class="no-radio-bg"
+                                            value="No">
+                                        <span class="checkmark"></span>
+                                        <span>No</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col2 yes-no-left">
+                                    <span class="icon-yes-no phone-icon"></span>
+                                    <span class="text-yes-no">Phone / Chat</span>
+                                </div>
+                                <div class="col2 yes-no-right">
+                                    <label class="radio-label" for="phone-yes">
+                                        <input type="radio" id="phone-yes" name="phone_yes_no" class="yes-radio-bg"
+                                            value="Yes" checked>
+                                        <span class="checkmark"></span>
+                                        <span>Yes</span>
+                                    </label>
+                                    <label class="radio-label" for="phone-no">
+                                        <input type="radio" id="phone-no" name="phone_yes_no" class="no-radio-bg"
+                                            value="No">
+                                        <span class="checkmark"></span>
+                                        <span>No</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col2 yes-no-left">
+                                    <span class="icon-yes-no postal-icon"></span>
+                                    <span class="text-yes-no">Postal mail</span>
+                                </div>
+                                <div class="col2 yes-no-right">
+                                    <label class="radio-label" for="postal-yes">
+                                        <input type="radio" id="postal-yes" name="postal_yes_no" class="yes-radio-bg"
+                                            value="Yes">
+                                        <span class="checkmark"></span>
+                                        <span>Yes</span>
+                                    </label>
+                                    <label class="radio-label" for="postal-no">
+                                        <input type="radio" id="postal-no" name="postal_yes_no" class="no-radio-bg"
+                                            value="No" checked>
+                                        <span class="checkmark"></span>
+                                        <span>No</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="info-area">
+                        <p>Diptyque would like to keep you updated about our latest products and offers (including our new
+                            arrivals, exclusive previews, special offers and promotions). If you are happy for us to do this,
+                            please tick the relevant boxes above to indicate how you would like us to get in touch with you.
+                        </p>
+                        <br>
+                        <p> You can change your mind at any time and withdraw your consent by following the link at the bottom
+                            of our emails or contacting us by sending an email to: <strong>privacy@diptyqueparis.com.</strong> Please see our 
+                            <strong><u>Privacy Policy</u></strong> for more information about how we handle and use your personal information.</p>
+                    </div>
+
+                    <div class="btns-section">
+                        <input class="cancel-btn" type="button" value="CANCEL" onclick="msg()">
+                        <input class="submit-btn" type="submit" value="CONFIRM">
+                    </div>
+                </section>
+            </form>
+        </div>
+    </body>
+
+</html>
