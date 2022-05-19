@@ -592,15 +592,18 @@ contact-area .form-title {
 }
 
 .birth-month {
-  width: 86px;
+  width: 100%;
+  max-width: 86px;
 }
 
 .birth-day {
-  width: 88px;
+  width: 100%;
+  max-width: 88px;
 }
 
 .birth-year {
-  width: 108px;
+  width: 100%;
+  max-width: 108px;
 }
 
 .bd-notice {
@@ -833,6 +836,18 @@ yes-no-right {
 }
 
 @media screen and (max-width: 500px) {
+
+  .bd-wrap .row:first-child,
+  .phone-row {
+    flex-direction: column;
+  }
+
+  .bd-picker-text,
+  .phone-label {
+    margin-right: 0;
+    margin-bottom: 10xp;
+  }
+
   .main-container > section {
     padding: 16px 17px 15px;
   }
