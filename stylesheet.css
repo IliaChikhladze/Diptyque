@@ -137,7 +137,7 @@ body {
 @font-face {
   font-family: GothamHTF-Book;
   src: local(GothamHTF-Book),
-    url(/assets/fonts/GothamHTF-Book.woff) format("woff");
+    url(assets/fonts/GothamHTF-Book.woff) format("woff");
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
@@ -146,14 +146,14 @@ body {
 @font-face {
   font-family: GothamHTF;
   src: local(GothamHTF-Medium),
-    url(/assets/fonts/GothamHTF-Medium.woff) format("woff");
+    url(assets/fonts/GothamHTF-Medium.woff) format("woff");
   font-weight: 500;
   font-style: normal;
   font-stretch: normal;
 }
 
 .chevron-icon {
-  background-image: url(/assets/chevron-down.png);
+  background-image: url(assets/chevron-down.png);
   background-size: 150%;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -162,7 +162,7 @@ body {
 }
 
 .email-icon {
-  background-image: url(/assets/email.png);
+  background-image: url(assets/email.png);
   background-size: 100%;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -171,7 +171,7 @@ body {
 }
 
 .phone-icon {
-  background-image: url(/assets/whatsapp.png);
+  background-image: url(assets/whatsapp.png);
   background-size: 100%;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -180,7 +180,7 @@ body {
 }
 
 .postal-icon {
-  background-image: url(/assets/mailbox.png);
+  background-image: url(assets/mailbox.png);
   background-size: 100%;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -248,7 +248,7 @@ p {
 /* When the checkbox is checked, add a blue background */
 .checkbox-label input:checked ~ .checkmark {
   border: none;
-  background-image: url(/assets/checkbox-checked.png);
+  background-image: url(assets/checkbox-checked.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -301,12 +301,12 @@ p {
 
 /* When the radio button is checked, add a blue background */
 .yes-radio-bg:checked + .checkmark {
-  background-image: url(/assets/icon-radio-select.svg);
+  background-image: url(assets/icon-radio-select.svg);
   border: none;
 }
 
 .no-radio-bg:checked + .checkmark {
-  background-image: url(/assets/icon-radio-no.svg);
+  background-image: url(assets/icon-radio-no.svg);
   border: none;
 }
 
@@ -377,7 +377,7 @@ select {
   -webkit-appearance: none;
   -moz-appearance: none;
   text-indent: 1px;
-  background: #ffffff url(/assets/chevron-down.png) no-repeat 96% center;
+  background: #ffffff url(assets/chevron-down.png) no-repeat 96% center;
   background-repeat: no-repeat;
 }
 
@@ -423,7 +423,7 @@ select {
   height: 60px;
   color: #ffffff;
   text-align: center;
-  background-image: url(/assets/logo.png);
+  background-image: url(assets/logo.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -621,7 +621,7 @@ contact-area .form-title {
   content: "";
   width: 30px;
   height: 100%;
-  background-image: url(/assets/gift.svg);
+  background-image: url(assets/gift.svg);
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
