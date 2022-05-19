@@ -838,8 +838,7 @@ contact-area .form-title {
 
 @media screen and (max-width: 500px) {
 
-  .bd-wrap .row:first-child,
-  .phone-row {
+  .bd-wrap .row:first-child {
     flex-direction: column;
   }
 
@@ -851,6 +850,7 @@ contact-area .form-title {
 
   .bd-picker-text,
   .phone-label {
+    width: 100%;
     margin-right: 0;
     margin-bottom: 10px;
     text-align: center;
