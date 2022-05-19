@@ -843,10 +843,17 @@ contact-area .form-title {
     flex-direction: column;
   }
 
+
+  .phone-row {
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
   .bd-picker-text,
   .phone-label {
     margin-right: 0;
-    margin-bottom: 10xp;
+    margin-bottom: 10px;
+    text-align: center;
   }
 
   .main-container > section {
